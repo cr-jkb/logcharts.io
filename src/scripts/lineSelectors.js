@@ -16,7 +16,7 @@ export function createAddSelectorBtn() {
 export function addNewSelector(selectorID, color, defaultField) {
   let lineContainer = document.querySelector('.selector-btn-container');
 
-  let isFirstSelector = false;
+  let isFirstSelector = true;
   if (lineContainer.children.length == 0) isFirstSelector = true;
 
   let selectorDiv = document.createElement('div');
@@ -108,5 +108,12 @@ function createNewLine() {
   let randomColor = generateRandomColor();
   let lineID = 'id' + new Date().valueOf();
   addNewSelector(lineID, randomColor, chart.defaultField);
+  chart.addNewLine(lineID, randomColor);
+}
+
+export function createFieldLine(field) {
+  let randomColor = generateRandomColor();
+  let lineID = 'id' + new Date().valueOf();
+  addNewSelector(lineID, randomColor, field);
   chart.addNewLine(lineID, randomColor);
 }

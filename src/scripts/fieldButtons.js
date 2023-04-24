@@ -34,6 +34,9 @@ export function addUpdateByField() {
     .querySelector('.btn-container')
     .addEventListener('click', (event) => {
       if (event.target.className == 'field-btn') {
+        if (!event.altKey) {
+          createFieldLine(event.target.innerHTML)
+        }
         updateByField(event.target.innerHTML);
       }
     });
