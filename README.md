@@ -62,3 +62,24 @@ Feel free to submit any issues or enhancement requests! I will do my best to fix
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
+
+
+<!-- TODO
+fix bug of tooltip vertical limits in chart
+upload via drag and drop
+fields text -> filename
+fields should stay set when changing the file (if possible = existent in csv)
+automatically link fieldButtons to selector (add delete button to selector) - default:colorToggle and remove MaterialAddButton
+make left field-bar hideable
+flow tooltip over selected curve
+whole left field-bar is drag and drop file-upload-space
+improve index page - automatically select first field of csv or automatically open example csv
+
+
+optional:
+multi file support. same values in same grid to compare multiple log recs. difficulty: need logical index instead of time
+-->
+
+<!-- done:
+change radiobuttons: register click on label, store selectedLine globally, update median vals on change of selection, 
+Click adds element as selector. Alt+Click replaces the existing selector -->

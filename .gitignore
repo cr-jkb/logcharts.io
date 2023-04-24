@@ -103,4 +103,5 @@ typings/
 .tern-port
 
 .vscode
+.idea
 .deployment
