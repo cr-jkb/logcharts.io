@@ -27,20 +27,20 @@ export function Chart(params) {
   this.brushHeight = 80;
 }
 
-Chart.prototype.draw = function() {
+Chart.prototype.draw = function () {
+  //Append the context svg to the chart container
+  this.contextSVG = d3
+    .select(document.querySelector('.context-container'))
+    .append('svg')
+    .attr('class', 'context-svg')
+    .attr('viewBox', `0 0 ${this.width} 100`);
+
   //Append the svg to the chart container
   this.chartSVG = d3
     .select(this.container)
     .append('svg')
     .attr('class', 'chart-svg')
     .attr('viewBox', `0 0 ${this.width} ${this.height}`);
-
-  //Append the context svg to the chart container
-  this.contextSVG = d3
-    .select(this.container)
-    .append('svg')
-    .attr('class', 'context-svg')
-    .attr('viewBox', `0 0 ${this.width} 100`);
 
   //Append the clip path to the svg to clip the line chart
   this.clip = this.chartSVG

@@ -84,6 +84,10 @@ function createContainers() {
   document.querySelector('.report-container').appendChild(container);
 
   container = document.createElement('div');
+  container.classList.add('context-container');
+  document.querySelector('.report-container').appendChild(container);
+
+  container = document.createElement('div');
   container.classList.add('selector-container');
   document.querySelector('.report-container').appendChild(container);
 

@@ -404,6 +404,15 @@ form button:hover {
   border-radius: var(--default-border-radius) var(--default-border-radius) 0 0;
 }
 
+.context-container {
+  display: flex;
+  background-color: var(--light-background);
+  font-family: "Source Sans Pro", sans-serif;
+  margin-top: 1rem;
+  border-bottom: 2px solid var(--border-color);
+  border-radius: var(--default-border-radius) var(--default-border-radius) 0 0;
+}
+
 .add-selector-btn {
   display: flex;
   color: #4e7bff;
